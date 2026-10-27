@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#1a1018">
+<meta name="description" content="写给妳的一封很长的信">
+<title>致 妳</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="hero" id="hero">
+  <div class="stars" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="hero-eyebrow">写给妳的一封很长的信</p>
+
+    <h1 class="hero-title">
+      <span class="t-line">致</span>
+      <span class="t-name">妳</span>
+    </h1>
+
+    <div class="hero-rule" aria-hidden="true"></div>
+
+    <div class="counter" id="counter" aria-live="polite">
+      <div class="counter-num" id="daysNum">—</div>
+      <div class="counter-label">在一起的第 <span id="daysInline">—</span> 天</div>
+    </div>
+
+    <div class="clock" id="clock" aria-hidden="true">
+      <span id="hh">00</span><i>:</i><span id="mm">00</span><i>:</i><span id="ss">00</span>
+    </div>
+  </div>
+
+  <a class="scroll-hint" href="#prologue" aria-label="向下浏览">
+    <span>向下</span>
+    <svg viewBox="0 0 12 20" width="12" height="20" aria-hidden="true">
+      <path d="M6 1v16M1.5 12.5L6 17l4.5-4.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</header>
+
+<main>
+
+  <section class="prologue" id="prologue">
+    <p class="reveal lead">
+      有些话，说出来会脸红，写下来又嫌太短。<br>
+      所以我把它们放进了这里。
+    </p>
+    <p class="reveal muted">
+      这个页面只属于两个人：妳，和我。
+    </p>
+  </section>
+
+  <section class="chapter" id="story">
+    <div class="chapter-head">
+      <span class="chapter-index">壹</span>
+      <h2>我们的故事</h2>
+      <p class="chapter-sub">某一天回头看，才发现每一步都算数</p>
+    </div>
+
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <section class="chapter chapter--alt" id="gallery">
+    <div class="chapter-head">
+      <span class="chapter-index">贰</span>
+      <h2>光落在妳身上</h2>
+      <p class="chapter-sub">那些被我偷偷存下来的瞬间</p>
+    </div>
+
+    <div class="gallery" id="gallery-grid"></div>
+    <p class="gallery-hint">把照片放进 <code>photos/</code> 文件夹，命名为 1.jpg ~ 9.jpg 即可自动显示</p>
+  </section>
+
+  <section class="chapter" id="little">
+    <div class="chapter-head">
+      <span class="chapter-index">叁</span>
+      <h2>关于妳的十件小事</h2>
+      <p class="chapter-sub">别人不知道，但我全都记得</p>
+    </div>
+
+    <ul class="little-list" id="little-list"></ul>
+  </section>
+
+  <section class="letter-wrap" id="letter">
+    <div class="letter">
+      <div class="letter-meta">
+        <span>写于 <span id="letterDate">—</span></span>
+        <span class="letter-to">致 妳</span>
+      </div>
+
+      <div class="letter-body" id="letter-body"></div>
+
+      <div class="letter-sign">
+        <span class="sign-text">永远站在妳这边的人</span>
+        <span class="sign-line" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="finale" id="finale">
+    <p class="finale-small">故事到这里还没有结束</p>
+    <h2 class="finale-title">未完待续</h2>
+    <p class="finale-text">接下来的每一天，我都想在。</p>
+
+    <button class="heart-btn" id="heartBtn" type="button" aria-label="点一下">
+      <svg viewBox="0 0 32 29" width="34" height="31" aria-hidden="true">
+        <path d="M16 28S1.5 19.2 1.5 9.9C1.5 4.9 5.3 1 10 1c2.6 0 4.8 1.3 6 3.3C17.2 2.3 19.4 1 22 1c4.7 0 8.5 3.9 8.5 8.9C30.5 19.2 16 28 16 28z" fill="currentColor"/>
+      </svg>
+    </button>
+    <p class="heart-tip">点一下</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Made with 心跳，只为一个人</p>
+  <p class="footer-sub">© <span id="year">2026</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
